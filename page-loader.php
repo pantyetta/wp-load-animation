@@ -2,13 +2,13 @@
 
 /**
  * @package page-loader
- * @version 1.0
+ * @version 1.1
  */
 /*
 Plugin Name: page-loader
 Plugin URL: https://github.com/pantyetta/page-loader
 Desxription: loading animation
-Version: 1.0
+Version: 1.1
 Author: pantyetta
 Author URL: https://pantyetta.com
 */
@@ -98,7 +98,13 @@ add_action('wp_head', function(){
         }
         
         .loader-inner img {
-            width: 10%;
+            width: 12%
+        }
+
+        @media (max-width: 959px){
+            .loader-inner img {
+                width: 10vmax;
+            }   
         }
     </style>
     <div class="loader">
